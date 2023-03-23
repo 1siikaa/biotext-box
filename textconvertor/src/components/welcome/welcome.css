@@ -1,0 +1,24 @@
+div {
+    scroll-behavior : smooth;
+    display: flex;
+    flex-direction : column;
+}
+
+.container{
+    display: flex;
+    flex-direction : row;
+    gap: 1.96rem;
+    padding:1rem;
+    max-width: 11rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+}
+
+
+.card{
+    min-width: 12.5rem;
+    min-height : 12.5rem;
+    color: black;
+
+}
