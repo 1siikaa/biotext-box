@@ -10,7 +10,7 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://practicemern-stack-989e.vercel.app/login", {
+    const response = await fetch("https://practicemern-stack-989e.vercel.app/login", {
      
       method: 'POST',
       headers: {
