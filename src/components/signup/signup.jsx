@@ -13,7 +13,7 @@ function Signup() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-        const response = await fetch("http://practicemern-stack-989e.vercel.app/signup", {
+        const response = await fetch("https://practicemern-stack-989e.vercel.app/signup", {
           
           method: 'POST',
           headers: {
