@@ -7,14 +7,7 @@ function welcome() {
   return (
     <div>
 
-        <div className= 'container'>
-            <div className='card'>
-               Welcome
-            </div>
-            <div className='card'>
-               Welcome to our page
-            </div>
-            </div>
+        <h1>Welcome This page</h1>
 
           <div>
           <h3><Link to='/signup'>Create an account</Link></h3>

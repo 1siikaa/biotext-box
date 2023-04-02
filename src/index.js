@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Welcome from '../src/components/welcome/welcome'
 import Signup from './components/signup/signup';
 import Login from './components/login/login';
+import Texttoimage from './components/textImage/textImage'
 
 
  import App from './App'
@@ -20,7 +21,7 @@ root.render(
       <Route path="/" element={<Welcome/>}></Route>
 <Route path='/signup' element = {<Signup/>} ></Route>
 <Route  path='/login' element={<Login/>}></Route>
- <Route path='/logout'  ></Route>
+ <Route path='/text' element={<Texttoimage/>}  ></Route>
       </Routes>
     </BrowserRouter>
     

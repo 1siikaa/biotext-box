@@ -6,20 +6,18 @@ function Navbar() {
   const [click, setClick]= useState(false)
   const [clicked, setClicked]= useState(false)
   const [clicks, setClicks]= useState(false)
-  const [clicking, setClicking]= useState(false)
 
   const handleClick=()=> setClick(!click)
   const handleClicked=()=>setClicked(!clicked)
   const handleClicks=()=> setClicks(!clicks)
-  const handleClicking=()=> setClicking(!clicking)
 
   return (
     <div>
     <ul>
     <li><h3><Link className={click? "active": "change" } to='/' onClick={handleClick}>HomePage</Link></h3></li>
     <li><h3><Link className={clicked? "active": "change"} to='/signup' onClick={handleClicked}>SignUp</Link></h3></li>
+    
     <li><h3><Link className={clicks? "active": "change"} to='/login' onClick={handleClicks}>Login</Link></h3></li>
-    <li><h3><Link className={clicking? "active": "change"} to='/logout' onClick={handleClicking}>Logout</Link></h3></li>
     </ul> 
     </div>
     

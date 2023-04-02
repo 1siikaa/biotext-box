@@ -4,10 +4,11 @@ import React, { useState } from 'react'
 import './login.css'
 
 import { useNavigate, Link } from 'react-router-dom'
+
 export default function Login() {
   const [credentials, setCredentials] = useState({ email: "", password: "" })
   let navigate = useNavigate()
-
+   
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch("https://practicemern-stack-989e.vercel.app/login", {
@@ -26,7 +27,8 @@ export default function Login() {
       //save the auth toke to local storage and redirect
       localStorage.setItem('userEmail', credentials.email)
       localStorage.setItem('token', json.authToken)
-      navigate("/");
+      navigate("/text");
+      
 
     }
     else {
